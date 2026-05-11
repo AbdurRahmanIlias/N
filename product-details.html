@@ -23,7 +23,11 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                        <li class="nav-item">
+  <a class="nav-link" href="cart.html">
+    Cart <span id="cart-count" class="badge bg-warning text-dark" style="display:none;"></span>
+  </a>
+</li>
                 <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
             </ul>
         </div>
@@ -31,31 +35,127 @@
 </nav>
 
 <section class="py-5">
-    <div class="container">
-        <div class="row">
+  <div class="container">
+    <div class="row g-4">
 
-            <div class="col-md-6">
-                <img src="images/product3.jpg" class="img-fluid rounded shadow" alt="Laptop">
-            </div>
-
-            <div class="col-md-6">
-                <h2>Gaming Laptop</h2>
-                <p class="text-muted">High performance gaming laptop.</p>
-                <h3 class="text-success">$1200</h3>
-
-                <ul>
-                    <li>16GB RAM</li>
-                    <li>512GB SSD</li>
-                    <li>RTX Graphics</li>
-                    <li>144Hz Display</li>
-                </ul>
-
-                <button class="btn btn-primary btn-lg add-cart">Add to Cart</button>
-            </div>
-
+      <!-- Product 1 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 product-item">
+          <img src="images/product1.jpg" class="card-img-top" alt="Gaming Laptop">
+          <div class="card-body">
+            <h5 class="card-title">Gaming Laptop</h5>
+            <p class="text-muted">High performance gaming laptop.</p>
+            <h6 class="text-success">$1200</h6>
+            <ul>
+              <li>16GB RAM</li>
+              <li>512GB SSD</li>
+              <li>RTX Graphics</li>
+              <li>144Hz Display</li>
+            </ul>
+            <button class="btn btn-primary add-cart">Add to Cart</button>
+          </div>
         </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 product-item">
+          <img src="images/product2.jpg" class="card-img-top" alt="Smartphone">
+          <div class="card-body">
+            <h5 class="card-title">Smartphone</h5>
+            <p class="text-muted">Latest Android smartphone.</p>
+            <h6 class="text-success">$800</h6>
+            <ul>
+              <li>8GB RAM</li>
+              <li>256GB Storage</li>
+              <li>Quad Camera</li>
+              <li>5G Support</li>
+            </ul>
+            <button class="btn btn-primary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 product-item">
+          <img src="images/product3.jpg" class="card-img-top" alt="Headphones">
+          <div class="card-body">
+            <h5 class="card-title">Wireless Headphones</h5>
+            <p class="text-muted">Noise cancelling headphones.</p>
+            <h6 class="text-success">$150</h6>
+            <ul>
+              <li>Bluetooth 5.0</li>
+              <li>20hr Battery</li>
+              <li>Comfort Fit</li>
+              <li>Mic Support</li>
+            </ul>
+            <button class="btn btn-primary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 product-item">
+          <img src="images/product4.jpg" class="card-img-top" alt="Smartwatch">
+          <div class="card-body">
+            <h5 class="card-title">Smartwatch</h5>
+            <p class="text-muted">Fitness tracking smartwatch.</p>
+            <h6 class="text-success">$200</h6>
+            <ul>
+              <li>Heart Rate Monitor</li>
+              <li>GPS Tracking</li>
+              <li>Water Resistant</li>
+              <li>Custom Watch Faces</li>
+            </ul>
+            <button class="btn btn-primary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 product-item">
+          <img src="images/product5.jpg" class="card-img-top" alt="Tablet">
+          <div class="card-body">
+            <h5 class="card-title">Tablet</h5>
+            <p class="text-muted">Portable tablet for work & play.</p>
+            <h6 class="text-success">$600</h6>
+            <ul>
+              <li>10-inch Display</li>
+              <li>128GB Storage</li>
+              <li>Stylus Support</li>
+              <li>Dual Camera</li>
+            </ul>
+            <button class="btn btn-primary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 product-item">
+          <img src="images/product6.jpg" class="card-img-top" alt="Camera">
+          <div class="card-body">
+            <h5 class="card-title">DSLR Camera</h5>
+            <p class="text-muted">Professional photography camera.</p>
+            <h6 class="text-success">$1000</h6>
+            <ul>
+              <li>24MP Sensor</li>
+              <li>4K Video</li>
+              <li>Wi-Fi Transfer</li>
+              <li>Interchangeable Lens</li>
+            </ul>
+            <button class="btn btn-primary add-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
+
 
 <footer class="bg-dark text-white text-center py-3">
     <p>© 2026 ShopEase</p>
