@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ShopEase</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">ShopEase</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link active" href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Checkout Form -->
+            <div class="col-md-7">
+                <h2 class="mb-4">Checkout</h2>
+
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Shipping Address</label>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+
+                    <button class="btn btn-success btn-lg">Place Order</button>
+                </form>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="col-md-5">
+                <div class="bg-light p-4 rounded shadow-sm">
+                    <h3>Contact Us</h3>
+                    <p>Email: abdurrahmanilias2004@gmail.com</p>
+                    <p>Phone: +8801722524210</p>
+                    <p>Address: Panchagarh, Bangladesh</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>© 2026 ShopEase</p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

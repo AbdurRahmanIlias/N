@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online shopping website for electronics, fashion, and accessories.">
+    <meta name="keywords" content="ecommerce, online shopping, products, electronics, fashion">
+    <title>ShopEase - Home</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">ShopEase</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item me-3">
+                    <a class="nav-link position-relative" href="cart.html">
+                        Cart
+                        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                            0
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-white text-center d-flex align-items-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Welcome to ShopEase</h1>
+        <p class="lead">Best Deals on Electronics, Fashion & Accessories</p>
+        <a href="products.html" class="btn btn-warning btn-lg">Shop Now</a>
+    </div>
+</section>
+
+<!-- Search Bar -->
+<section class="py-4 bg-light">
+    <div class="container">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search products...">
+    </div>
+</section>
+
+<!-- Featured Products -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Featured Products</h2>
+
+        <div class="row g-4" id="productContainer">
+
+            <div class="col-md-4 product-item">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/smartphone.jpg" class="card-img-top" alt="Smartphone">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Smartphone</h5>
+                        <p class="card-text">$499</p>
+                        <a href="product-details.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/headphone.jpg" class="card-img-top" alt="Headphones">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wireless Headphones</h5>
+                        <p class="card-text">$99</p>
+                        <a href="product-details.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/laptop.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gaming Laptop</h5>
+                        <p class="card-text">$1200</p>
+                        <a href="product-details.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <div class="row g-4" id="productContainer">
+
+            <div class="col-md-4 product-item">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/product1.jpg" class="card-img-top" alt="Smartphone">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">PC</h5>
+                        <p class="card-text">$499</p>
+                        <a href="product-details.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/product2.jpg" class="card-img-top" alt="Headphones">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">RAM</h5>
+                        <p class="card-text">$99</p>
+                        <a href="product-details.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 product-item">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/product3.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Laptop</h5>
+                        <p class="card-text">$1200</p>
+                        <a href="product-details.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Product -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">All Products</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/smartphone.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5>Smartphone</h5>
+                        <p>$499</p>
+                        <button class="btn btn-success add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/headphone.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5>Headphones</h5>
+                        <p>$99</p>
+                        <button class="btn btn-success add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/laptop.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5>Laptop</h5>
+                        <p>$1200</p>
+                        <button class="btn btn-success add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/watch.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5>Smart Watch</h5>
+                        <p>$250</p>
+                        <button class="btn btn-success add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/pc.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5>PC</h5>
+                        <p>$500</p>
+                        <button class="btn btn-success add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/ram.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5>RAM</h5>
+                        <p>$29</p>
+                        <button class="btn btn-success add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/laptop.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5>Laptop</h5>
+                        <p>$1200</p>
+                        <button class="btn btn-success add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="img/watch.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body text-center">
+                        <h5>Smart Watch</h5>
+                        <p>$250</p>
+                        <button class="btn btn-success add-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Product Details -->
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <img src="img/download.jpg" class="img-fluid rounded shadow" alt="Laptop">
+            </div>
+
+            <div class="col-md-3">
+                <h2>Gaming Laptop</h2>
+                <p class="text-muted">High performance gaming laptop.</p>
+                <h3 class="text-success">$1200</h3>
+
+                <ul>
+                    <li>16GB RAM</li>
+                    <li>512GB SSD</li>
+                    <li>RTX Graphics</li>
+                    <li>144Hz Display</li>
+                </ul>
+
+                <button class="btn btn-primary btn-lg add-cart">Add to Cart</button>
+            </div>
+  
+         
+         
+
+        </div>
+       
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
