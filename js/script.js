@@ -330,3 +330,25 @@ function removeItem(index) {
 window.onload = () => {
     showCartCount();
 };
+
+
+// =========================
+// MAP
+// =========================
+    var lat = 26.3331;
+    var lon = 88.5617;
+
+    var map = L.map('map').setView([lat, lon], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    var marker = L.marker([lat, lon]).addTo(map);
+    marker.bindPopup("<b>Panchagarh Creative IT</b><br>Training & IT Solutions Center").openPopup();
+
+    // Live Date & Time in footer
+    function updateDateTime(){
+      document.getElementById("datetime").textContent = new Date().toLocaleString();
+    }
+    setInterval(updateDateTime,1000);
+    updateDateTime();
