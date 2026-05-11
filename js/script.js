@@ -197,12 +197,13 @@ cartButtons.forEach((button) => {
         const productCard = button.closest('.card') || button.closest('.row');
 
         let productName = productCard.querySelector('h5, h2').innerText;
-        let productPrice = productCard.querySelector('p').innerText;
+        let productPriceText = productCard.querySelector('h3, h6, p').innerText;
+        let productPrice = parseFloat(productPriceText.replace(/[^0-9.]/g, '')); // শুধু সংখ্যা নাও
         let productImage = productCard.querySelector('img').src;
 
         const product = {
             name: productName,
-            price: productPrice,
+            price: productPrice,   // এখন number হিসেবে রাখা হলো
             image: productImage,
             quantity: 1
         };
@@ -265,8 +266,7 @@ if (cartTable) {
 
     cart.forEach((item, index) => {
 
-        let price = parseFloat(item.price.replace('$', ''));
-        let itemTotal = price * item.quantity;
+        let itemTotal = item.price * item.quantity;
         total += itemTotal;
 
         cartTable.innerHTML += `
@@ -275,7 +275,7 @@ if (cartTable) {
                     <img src="${item.image}" width="70" class="rounded me-2">
                     ${item.name}
                 </td>
-                <td>$${price}</td>
+                <td>$${item.price}</td>
                 <td>
                     <input type="number" min="1" value="${item.quantity}" 
                     onchange="updateQuantity(${index}, this.value)"
@@ -330,4 +330,3 @@ function removeItem(index) {
 window.onload = () => {
     showCartCount();
 };
-
