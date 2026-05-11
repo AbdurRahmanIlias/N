@@ -33,7 +33,7 @@ body {
 /* Hero Section */
 .hero-section {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('../img/photo-1523275335684-37898b6baf30.avif') center center/cover no-repeat;
+    url('/img/bg.jpg') center center/cover no-repeat;
     height: 95vh;
     display: flex;
     align-items: center;
@@ -108,6 +108,46 @@ textarea {
     border-radius: 12px;
     padding: 12px;
 }
+/* Hero Section */
+
+/* HERO CAROUSEL */
+.hero-img {
+  height: 95vh;
+  object-fit: cover;
+  filter: brightness(55%);
+}
+
+.carousel-caption {
+  bottom: 0;
+  top: 0;
+}
+
+.carousel-caption h1 {
+  animation: fadeDown 1s ease;
+}
+
+.carousel-caption p {
+  animation: fadeUp 1.2s ease;
+}
+
+.carousel-caption .btn {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 12px 30px;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* HERO CAROUSEL */
 
 /* Footer */
 footer {
@@ -144,3 +184,4 @@ h2::after {
         height: 75vh;
     }
 }
+

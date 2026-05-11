@@ -1,167 +1,312 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details - ShopEase</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
         <a class="navbar-brand" href="index.html">ShopEase</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-                        <li class="nav-item">
-  <a class="nav-link" href="cart.html">
-    Cart <span id="cart-count" class="badge bg-warning text-dark" style="display:none;"></span>
-  </a>
-</li>
-                <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                Cart
+                <span
+                  id="cart-count"
+                  class="badge bg-warning text-dark"
+                  style="display: none"
+                ></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="checkout.html">Checkout</a>
+            </li>
+          </ul>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4">
+    <section class="py-4 bg-light">
+      <div class="container">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="Search products..."
+        />
+      </div>
+    </section>
 
-      <!-- Product 1 -->
-      <div class="col-md-4">
-        <div class="card shadow h-100 product-item">
-          <img src="img/laptop.jpg" class="card-img-top" alt="Gaming Laptop">
-          <div class="card-body">
-            <h5 class="card-title">Gaming Laptop</h5>
-            <p class="text-muted">High performance gaming laptop.</p>
-            <h6 class="text-success">$1200</h6>
-            <ul>
-              <li>16GB RAM</li>
-              <li>512GB SSD</li>
-              <li>RTX Graphics</li>
-              <li>144Hz Display</li>
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-md-4">
+            <div class="card shadow h-100 product-item">
+              <img
+                src="img/laptop.jpg"
+                class="card-img-top"
+                alt="Gaming Laptop"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gaming Laptop</h5>
+                <p class="text-muted">High performance gaming laptop.</p>
+                <h6 class="text-success">$1200</h6>
+                <ul>
+                  <li>16GB RAM</li>
+                  <li>512GB SSD</li>
+                  <li>RTX Graphics</li>
+                  <li>144Hz Display</li>
+                </ul>
+                <button class="btn btn-primary add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-md-4">
+            <div class="card shadow h-100 product-item">
+              <img
+                src="img/smartphone.jpg"
+                class="card-img-top"
+                alt="Smartphone"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Smartphone</h5>
+                <p class="text-muted">Latest Android smartphone.</p>
+                <h6 class="text-success">$800</h6>
+                <ul>
+                  <li>8GB RAM</li>
+                  <li>256GB Storage</li>
+                  <li>Quad Camera</li>
+                  <li>5G Support</li>
+                </ul>
+                <button class="btn btn-primary add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-md-4">
+            <div class="card shadow h-100 product-item">
+              <img
+                src="img/headphone.jpg"
+                class="card-img-top"
+                alt="Headphones"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wireless Headphones</h5>
+                <p class="text-muted">Noise cancelling headphones.</p>
+                <h6 class="text-success">$150</h6>
+                <ul>
+                  <li>Bluetooth 5.0</li>
+                  <li>20hr Battery</li>
+                  <li>Comfort Fit</li>
+                  <li>Mic Support</li>
+                </ul>
+                <button class="btn btn-primary add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-md-4">
+            <div class="card shadow h-100 product-item">
+              <img src="img/watch.jpg" class="card-img-top" alt="Smartwatch" />
+              <div class="card-body">
+                <h5 class="card-title">Smartwatch</h5>
+                <p class="text-muted">Fitness tracking smartwatch.</p>
+                <h6 class="text-success">$200</h6>
+                <ul>
+                  <li>Heart Rate Monitor</li>
+                  <li>GPS Tracking</li>
+                  <li>Water Resistant</li>
+                  <li>Custom Watch Faces</li>
+                </ul>
+                <button class="btn btn-primary add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="col-md-4">
+            <div class="card shadow h-100 product-item">
+              <img src="img/tab.jpg" class="card-img-top" alt="Tablet" />
+              <div class="card-body">
+                <h5 class="card-title">Tablet</h5>
+                <p class="text-muted">Portable tablet for work & play.</p>
+                <h6 class="text-success">$600</h6>
+                <ul>
+                  <li>10-inch Display</li>
+                  <li>128GB Storage</li>
+                  <li>Stylus Support</li>
+                  <li>Dual Camera</li>
+                </ul>
+                <button class="btn btn-primary add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-md-4">
+            <div class="card shadow h-100 product-item">
+              <img src="img/dslr.jpg" class="card-img-top" alt="Camera" />
+              <div class="card-body">
+                <h5 class="card-title">DSLR Camera</h5>
+                <p class="text-muted">Professional photography camera.</p>
+                <h6 class="text-success">$1000</h6>
+                <ul>
+                  <li>24MP Sensor</li>
+                  <li>4K Video</li>
+                  <li>Wi-Fi Transfer</li>
+                  <li>Interchangeable Lens</li>
+                </ul>
+                <button class="btn btn-primary add-cart">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-5 border-top bg-light">
+      <div class="container py-5">
+        <div class="row g-4">
+          <!-- Logo & Description -->
+          <div class="col-md-3">
+            <a
+              href="/"
+              class="d-flex align-items-center gap-2 fw-bold fs-5 text-decoration-none"
+            >
+              <span
+                class="d-grid place-items-center rounded bg-primary text-white"
+                style="width: 32px; height: 32px"
+                >S</span
+              >
+              ShopEase
+            </a>
+            <p class="mt-3 small text-muted">
+              Thoughtfully curated goods for a brighter everyday.
+            </p>
+          </div>
+
+          <!-- Shop Links -->
+          <div class="col-md-3">
+            <h4 class="mb-3 small fw-semibold">Shop</h4>
+            <ul class="list-unstyled small text-muted">
+              <li>
+                <a
+                  href="/products.html"
+                  class="text-decoration-none text-muted hover-link"
+                  >All products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/cart.html"
+                  class="text-decoration-none text-muted hover-link"
+                  >Cart</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/checkout.html"
+                  class="text-decoration-none text-muted hover-link"
+                  >Checkout</a
+                >
+              </li>
             </ul>
-            <button class="btn btn-primary add-cart">Add to Cart</button>
+          </div>
+
+          <!-- Company Links -->
+          <div class="col-md-3">
+            <h4 class="mb-3 small fw-semibold">Company</h4>
+            <ul class="list-unstyled small text-muted">
+              <li>
+                <a
+                  href="/index.html"
+                  class="text-decoration-none text-muted hover-link"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/contact"
+                  class="text-decoration-none text-muted hover-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="col-md-3">
+            <h4 class="mb-3 small fw-semibold">Follow</h4>
+            <div class="d-flex gap-2">
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center rounded-circle border bg-white text-muted p-2"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center rounded-circle border bg-white text-muted p-2"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center rounded-circle border bg-white text-muted p-2"
+              >
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center rounded-circle border bg-white text-muted p-2"
+              >
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Product 2 -->
-      <div class="col-md-4">
-        <div class="card shadow h-100 product-item">
-          <img src="img/smartphone.jpg" class="card-img-top" alt="Smartphone">
-          <div class="card-body">
-            <h5 class="card-title">Smartphone</h5>
-            <p class="text-muted">Latest Android smartphone.</p>
-            <h6 class="text-success">$800</h6>
-            <ul>
-              <li>8GB RAM</li>
-              <li>256GB Storage</li>
-              <li>Quad Camera</li>
-              <li>5G Support</li>
-            </ul>
-            <button class="btn btn-primary add-cart">Add to Cart</button>
-          </div>
+      <!-- Bottom Bar -->
+
+      <div class="border-top">
+        <div
+          class="container py-3 d-flex flex-column flex-md-row justify-content-between align-items-center small text-muted"
+        >
+          <p class="mb-0">© 2026 Lumen. All rights reserved.</p>
+          <p class="mb-0 font-monospace">11 May 2026 · 11:07 PM</p>
         </div>
       </div>
+    </footer>
 
-      <!-- Product 3 -->
-      <div class="col-md-4">
-        <div class="card shadow h-100 product-item">
-          <img src="img/headphone.jpg" class="card-img-top" alt="Headphones">
-          <div class="card-body">
-            <h5 class="card-title">Wireless Headphones</h5>
-            <p class="text-muted">Noise cancelling headphones.</p>
-            <h6 class="text-success">$150</h6>
-            <ul>
-              <li>Bluetooth 5.0</li>
-              <li>20hr Battery</li>
-              <li>Comfort Fit</li>
-              <li>Mic Support</li>
-            </ul>
-            <button class="btn btn-primary add-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="col-md-4">
-        <div class="card shadow h-100 product-item">
-          <img src="img/watch.jpg" class="card-img-top" alt="Smartwatch">
-          <div class="card-body">
-            <h5 class="card-title">Smartwatch</h5>
-            <p class="text-muted">Fitness tracking smartwatch.</p>
-            <h6 class="text-success">$200</h6>
-            <ul>
-              <li>Heart Rate Monitor</li>
-              <li>GPS Tracking</li>
-              <li>Water Resistant</li>
-              <li>Custom Watch Faces</li>
-            </ul>
-            <button class="btn btn-primary add-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 5 -->
-      <div class="col-md-4">
-        <div class="card shadow h-100 product-item">
-          <img src="img/tab.jpg" class="card-img-top" alt="Tablet">
-          <div class="card-body">
-            <h5 class="card-title">Tablet</h5>
-            <p class="text-muted">Portable tablet for work & play.</p>
-            <h6 class="text-success">$600</h6>
-            <ul>
-              <li>10-inch Display</li>
-              <li>128GB Storage</li>
-              <li>Stylus Support</li>
-              <li>Dual Camera</li>
-            </ul>
-            <button class="btn btn-primary add-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 6 -->
-      <div class="col-md-4">
-        <div class="card shadow h-100 product-item">
-          <img src="img/dslr.jpg" class="card-img-top" alt="Camera">
-          <div class="card-body">
-            <h5 class="card-title">DSLR Camera</h5>
-            <p class="text-muted">Professional photography camera.</p>
-            <h6 class="text-success">$1000</h6>
-            <ul>
-              <li>24MP Sensor</li>
-              <li>4K Video</li>
-              <li>Wi-Fi Transfer</li>
-              <li>Interchangeable Lens</li>
-            </ul>
-            <button class="btn btn-primary add-cart">Add to Cart</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<footer class="bg-dark text-white text-center py-3">
-    <p>© 2026 ShopEase</p>
-</footer>
-
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
